@@ -1,5 +1,8 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ashishkrishan1995/dataStructures/master/LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/ashishkrishan1995/dataStructures.svg)](https://github.com/ashishkrishan1995/dataStructures/network)
+[![GitHub issues](https://img.shields.io/github/issues/ashishkrishan1995/dataStructures.svg)](https://github.com/ashishkrishan1995/dataStructures/issues)
+[![GitHub stars](https://img.shields.io/github/stars/ashishkrishan1995/dataStructures.svg)](https://github.com/ashishkrishan1995/dataStructures/stargazers)
 # Data Structures
-
 This repository contains the various progams on Data Structures and Algorithms using C and C++.
 
 Further, it contains the programs which are commonly asked in the technical interviews of companies like Microsoft, Amazon, Flipkart, DE Shaw etc.

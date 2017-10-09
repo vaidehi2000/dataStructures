@@ -18,6 +18,7 @@ A linked lists are simple data structures where each object links to the object 
 
 ## Resources
 [Open Data Structures](http://opendatastructures.org/)
+[Data Structures on hackerearth](https://www.hackerearth.com/practice/)
 
 ## Authors
 

@@ -17,8 +17,9 @@ A linked lists are simple data structures where each object links to the object 
 1D Arrays are like linked lists, but where you can access each element directly. This is great if you know what you want out of it, but no better if you need to search through until you find a match. Higher order arrays (2D, 3D, 4D, etc...) give greater granularity and can help if you can give meaningful ordering to each new dimension. ex name on dimension 1 and age on dimension 2.
 
 ## Resources
-[Open Data Structures](http://opendatastructures.org/)
-[Data Structures on hackerearth](https://www.hackerearth.com/practice/)
+[Open Data Structures](http://opendatastructures.org/) <br>
+[Data Structures on hackerearth](https://www.hackerearth.com/practice/) <br>
+[Resources on Codechef](https://www.codechef.com/certification/prepare) <br>
 
 ## Authors
 

@@ -3,66 +3,74 @@
 #include<stdio>
 #include<stdlib>
 
-struct Node
-{
+struct Node{ // Linked List Node Structure
 	int data;
-   struct Node* next;
+	struct Node* next;
 };
 
+// Adds an element to the head of the list
 void push(struct Node**head, int data)
 {
-	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node));
-   if(!newNode)
+	struct Node *newNode= (struct Node*)malloc(sizeof(struct Node)); // allocate memory for new Node
+
+	 if(!newNode) // if memory was not allocated
    {
    	cout<<"Memory Error";
    }
 
+	 // set structure variables
    newNode->data=data;
-   newNode->next=*head;
-   *head=newNode;
+   newNode->next=*head; // put in front of previous head
+   *head = newNode; //new Node is now the head
 }
 
+// Adds an element to the end (tail) of the list
 void append(struct Node**head, int data)
 {
-	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node));
-   struct Node *last=*head;
+	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node)); // allocate memory for Node
+  struct Node *last = *head;
 
+	 // set node data
    newNode->data=data;
-   newNode->next=NULL;
+   newNode->next=NULL; // end of list -> has no next
 
-   if(*head==NULL)
+   if(*head == NULL) // If empty list
    {
-   	*head=newNode;
+   	*head = newNode; // new node becomes the head
    }
 
-   while(last->next!=NULL)
+   while(last->next!=NULL) // find last (tail node)
    {
    	last=last->next;
    }
 
-   last->next=newNode;
+   last->next=newNode; // add to end of list
 }
 
+// prints list
 void dispList(struct Node *n)
 {
 	while(n!=NULL)
    {
    	cout<<n->data<<" ";
-      n=n->next;
+      n=n->next; // iterate through
    }
 }
 
+// add node between 2 nodes in list
 void middle(struct Node *prevNode, int data)
 {
 	if(prevNode==NULL)
    {
    	cout<<"Memory Error";
    }
-	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node));
+	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node)); // allocate memory
    newNode->data=data;
-   newNode->next=prevNode->next;
-	prevNode->next=newNode;
+   newNode->next=prevNode->next; // add before next node
+	prevNode->next=newNode; // add after pervious node
 }
+
+// some testing
 int main(void)
 {
 	struct Node* head = NULL;

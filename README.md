@@ -16,6 +16,10 @@ A linked lists are simple data structures where each object links to the object 
 
 1D Arrays are like linked lists, but where you can access each element directly. This is great if you know what you want out of it, but no better if you need to search through until you find a match. Higher order arrays (2D, 3D, 4D, etc...) give greater granularity and can help if you can give meaningful ordering to each new dimension. ex name on dimension 1 and age on dimension 2.
 
+## Binary Search Tree
+
+Binary search tree is a very performant way of store data. In a binary search tree, each node is sorted, when you want to add a node, you compare the value with the root, if this value is greater than root's value, you go to the right subtree, if not, you go to the left subtree, and then you compare your node with the root of the subtree until you find the right position of insertion. With this data structure, the research of a value is very fast because you don't have to compare it with each tree's value.
+
 ## Resources
 [Open Data Structures](http://opendatastructures.org/) <br>
 [Data Structures on hackerearth](https://www.hackerearth.com/practice/) <br>

@@ -7,27 +7,26 @@ int third = INT_MIN;
 void third_greatest(int n, int arr[])
 {
 	int first=arr[0], i;
-   for(i=0;i<n;i++)
-   {
-   	if(arr[i]>first)
-      {
-         third=second;
-         second=first;
-         first=arr[i];
-      }
-      else if(arr[i]>second)
-      {
-         third=second;
-      	second=arr[i];
-
-      }
-      else if(arr[i]>third)
-      {
-      	third=arr[i];
-      }
-   }
-   cout<<"\nThe third largest element is :"<<third;
-   return ;
+   	for(i=0;i<n;i++)
+   	{
+   		if(arr[i]>first)
+      		{
+         		third=second;
+         		second=first;
+         		first=arr[i];
+      		}
+      		else if(arr[i]>second)
+      		{
+         		third=second;
+      			second=arr[i];
+      		}
+      		else if(arr[i]>third)
+      		{
+      			third=arr[i];
+      		}
+   	}
+   	cout<<"\nThe third largest element is :"<<third;
+   	return ;
 }
 int main(void)
 {
